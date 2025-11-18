@@ -62,6 +62,23 @@ mitigating recognition challenges caused by varying environmental and facial con
 - **Visualization:** OpenCV overlaid bounding boxes and labels on the displayed frames to show recognition results in real time. The procedure then repeated for the next frame, enabling continuous, real-time attendance monitoring.
 
 ---
+
+## Results
+
+### 📷 The Student Facial Capturing and Real-time Recognition Results
+
+<p align="center">
+  <img src="recognition_results/facial_capturing_results.png" alt="facial_capturing_results" width="500" />
+  <img src="recognition_results/real-time_recognition_results.png" alt="real-time_recognition_results" width="470" />
+    <br>
+    <em> Results for the Student Facial Capturing (Left) and Real-time Recognition Results (Right) </em>
+</p>
+
+---
+
+### Results for the Model Evaluation on Images
+
+
 ## 💡 Research Novelty
 
 The novelty and contribution of this research to knowledge was in the successful _**development and training of a multi-facet facial recognition model that accurately identified pre-registered students under different real-time conditions, specifically in varying lighting, head variations, and the use of accessories,  (limited to glasses and beards )**_. In contrast to conventional models, which often exhibited reduced performance under these conditions, this research improved the domain of intelligent educational attendance systems by providing a model that could be used for practical deployments in educational institutions. 
