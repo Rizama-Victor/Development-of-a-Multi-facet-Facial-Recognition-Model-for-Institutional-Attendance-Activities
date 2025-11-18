@@ -127,16 +127,25 @@ OpenCV’s `resize` function.
 
 ### Real-time Evaluation
 
-Real-time performance of the multi-facet facial recognition model was evaluated under three key conditions: lighting variations, head positions, and appearance changes using two primary metrics namely **False Omission Rate (FOR)** and **response time**. For each of the three students, the FOR was measured across three head orientations (straight, 15° right tilt, and 15° left tilt), tested both with and without glasses under bright and dim lighting. Across all scenarios, each student completed six genuine recognition attempts, and the model recorded **no missed identifications**, resulting in a **0% False Omission Rate (FOR)**.
+Real-time performance of the multi-facet facial recognition model was evaluated under three key conditions: lighting variations, head positions, and appearance changes using two primary metrics namely **False Omission Rate (FOR)** and **response time**. For each of the three students, the FOR was measured across three head orientations (straight, `15°` right tilt, and `15°` left tilt), tested both with and without glasses under bright and dim lighting. Across all scenarios, each student completed six genuine recognition attempts, and the model recorded **no missed identifications**, resulting in a **0% False Omission Rate (FOR)**.
 
+For the response time The model demonstrated strong adaptability across all lighting and appearance conditions. Under bright lighting, it achieved an average response time of `4.02` seconds, reflecting efficient recognition in optimal conditions. In dim lighting, the average increased to `7.98` seconds due to reduced facial clarity, yet still confirmed the model’s capability to function reliably in low-light examination environments.
 
-### 🧠 Discussion of Results
+Appearance variations also affected performance: students wearing glasses or beards recorded an average response time of `6.21` seconds, compared to `5.79` seconds without accessories indicating only a modest increase in computation time. Head position tests revealed similar trends, with straight faces averaging `4.33` seconds, while `15°` leftward and rightward tilts produced `7.27` seconds and `6.40` seconds respectively, due to slight distortions in facial alignment.
 
-Observations on the evaluation metrics and confusion matrix for the images and videos shows that the model performed slightly better on images than on videos, consistently achieving near-perfect metrics for all students, with precision, recall, and F1-scores ranging from 0.9989 to 1.0000. In comparison, performance on videos remained excellent but showed small drops due to motion, lighting shifts, and frame variability, with metrics ranging from 0.9593 to 0.9996. Overall, the system demonstrated high accuracy in both modes, but static images provided the most stable recognition results.
+Overall, the model achieved a mean response time of `6.00` seconds across all evaluated conditions, demonstrating its reliability for real-time recognition.
 
 ---
 
-## 💡 Research Novelty
+## 💡 Key Insights
+
+- The use of  128-dimensional facial embeddings generated via a ResNet model was key in enabled effective differentiation between individuals even under challenging environmental and facial conditions.
+- Observations on the evaluation metrics and confusion matrix for the images and videos shows that the model performed slightly better on images than on videos, consistently achieving near-perfect metrics for all students.
+- The confusion matrices demonstrated strong classification capability, while the False Omission Rate (FOR) of 0% highlighted the model’s reliability in correctly identifying enrolled students.
+- Real-time evaluation of the model's performance suggested high lighting tolerance, pose adaptability, and accessory robustness, supporting its suitability for real-time examination attendance monitoring.
+- The overall average response time of 6.00 seconds across bright and dim conditions indicated the influence of lighting but reaffirmed the model’s efficiency for continuous operation.
+
+## ✨ Research Novelty
 
 The novelty and contribution of this research to knowledge was in the successful _**development and training of a multi-facet facial recognition model that accurately identified pre-registered students under different real-time conditions, specifically in varying lighting, head variations, and the use of accessories,  (limited to glasses and beards )**_. In contrast to conventional models, which often exhibited reduced performance under these conditions, this research improved the domain of intelligent educational attendance systems by providing a model that could be used for practical deployments in educational institutions. 
 
