@@ -125,6 +125,10 @@ OpenCV’s `resize` function.
     <em> The Confusion Matrix for the Evaluation on Videos</em>
 </p>
 
+### Real-time Evaluation
+
+Real-time performance of the multi-facet facial recognition model was evaluated under three key conditions: lighting variations, head positions, and appearance changes using two primary metrics namely **False Omission Rate (FOR)** and **response time**. For each of the three students, the FOR was measured across three head orientations (straight, 15° right tilt, and 15° left tilt), tested both with and without glasses under bright and dim lighting. Across all scenarios, each student completed six genuine recognition attempts, and the model recorded **no missed identifications**, resulting in a **0% False Omission Rate (FOR)**.
+
 
 ### 🧠 Discussion of Results
 
