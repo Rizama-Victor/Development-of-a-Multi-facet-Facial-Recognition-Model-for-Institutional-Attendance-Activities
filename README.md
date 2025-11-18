@@ -69,16 +69,48 @@ mitigating recognition challenges caused by varying environmental and facial con
 ### 📷 The Student Facial Capturing and Real-time Recognition Results
 
 <p align="center">
-  <img src="recognition_results/facial_capturing_results.png" alt="facial_capturing_results" width="500" />
-  <img src="recognition_results/real-time_recognition_results.png" alt="real-time_recognition_results" width="470" />
+  <img src="recognition_results/facial_capturing_results.png" alt="facial_capturing_results" width="800" />
     <br>
-    <em> Results for the Student Facial Capturing (Left) and Real-time Recognition Results (Right) </em>
+    <em> Results for the Student Facial Capturing </em>
 </p>
 
----
+<p align="center">
+  <img src="recognition_results/real-time_recognition_results.png" alt="real-time_recognition_results" width="800" />
+    <br>
+    <em> Real-time Recognition Results </em>
+</p>
 
 ### Results for the Model Evaluation on Images
 
+| Student    | Test Images | Images Processed | Images Not Processed | Precision | Recall | F1-Score |
+|------------|-------------|------------------|---------------------|-----------|--------|----------|
+| Student 1  | 1000        | 629              | 371                 | 1.0000    | 1.0000 | 1.0000   |
+| Student 2  | 1000        | 462              | 538                 | 1.0000    | 0.9978 | 0.9989   |
+| Student 3  | 1000        | 659              | 341                 | 0.9984    | 1.0000 | 0.9992   |
+
+### Results for the Model Evaluation on Video
+
+| Student    | Total Test Video Frames | Frames Processed | Frames Not Processed | Precision | Recall | F1-Score |
+|------------|-------------------------|------------------|----------------------|-----------|--------|----------|
+| Student 1  | 1544                    | 1215             | 329                  | 0.9959    | 0.9934 | 0.9946   |
+| Student 2  | 699                     | 492              | 207                  | 0.9979    | 0.9593 | 0.9782   |
+| Student 3  | 2930                    | 2352             | 578                  | 0.9903    | 0.9996 | 0.9949   |
+
+### Confusion Matrix Results 
+
+<p align="center">
+    <img src="recognition_results/confusion_matrix_image.png" alt="confusion_matrix_image" width="800"/>
+    <br>
+    <em> The Confusion Matrix for the Evaluation on Images</em>
+</p>
+
+<p align="center">
+    <img src="recognition_results/confusion_matrix_video.png" alt="confusion_matrix_video" width="800"/>
+    <br>
+    <em> The Confusion Matrix for the Evaluation on Videos</em>
+</p>
+
+---
 
 ## 💡 Research Novelty
 
