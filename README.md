@@ -42,7 +42,7 @@ mitigating recognition challenges caused by varying environmental and facial con
 
 ---
 
-## 📝 Methodology - Step by Step Procedure
+## 📝 Methodology - Step by Step Implementation Procedure
 
  - **Video capture:** The camera module captured a live video feed and frames were read continuously.
 
@@ -109,6 +109,11 @@ mitigating recognition challenges caused by varying environmental and facial con
     <br>
     <em> The Confusion Matrix for the Evaluation on Videos</em>
 </p>
+
+
+### Discussion of Results
+
+Observations on the evaluation metrics and confusion matrix for the images and videos shows that the model performed slightly better on images than on videos, consistently achieving near-perfect metrics for all students, with precision, recall, and F1-scores ranging from 0.9989 to 1.0000. In comparison, performance on videos remained excellent but showed small drops due to motion, lighting shifts, and frame variability, with metrics ranging from 0.9593 to 0.9996. Overall, the system demonstrated high accuracy in both modes, but static images provided the most stable recognition results.
 
 ---
 
