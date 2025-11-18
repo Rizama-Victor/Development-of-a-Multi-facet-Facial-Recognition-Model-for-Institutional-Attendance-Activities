@@ -39,6 +39,8 @@ mitigating recognition challenges caused by varying environmental and facial con
 | **classification_report (sklearn.metrics)** | Provided precision, recall, and F1-score for evaluating model performance.                                                                  |
 | **confusion_matrix (sklearn.metrics)**      | Computed confusion matrices used to assess correct and incorrect classification counts.                                                     |
 
+---
+
 ## 📝 Methodology - Step by Step Procedure
 
  - **Video capture:** The camera module captured a live video feed and frames were read continuously.
@@ -53,9 +55,9 @@ mitigating recognition challenges caused by varying environmental and facial con
 
 - **Feature encoding:** A ResNet-based model encoded aligned faces into 128-dimensional embedding vectors; embeddings were normalized using NumPy.
 
-- **Model matching / classification:** The system compared incoming embeddings to stored embeddings and determined a match when similarity exceeded a configured threshold; a KNN classifier was used for identification.
+- **Model Training / classification:** The encoding were then trainedon on a KNN algorithm which compared incoming embeddings to stored embeddings to determine a match when similarity exceeded a configured threshold.
 
-- **Attendance logging:** Recognized individuals were recorded in the attendance file with their ID and timestamp; unrecognized faces triggered the “unknown” protocol.
+- **Attendance logging:** Recognized individuals were recorded in the attendance file with their ID and timestamp nnd unrecognized faces triggered the “unknown” protocol.
 
 - **Visualization:** OpenCV overlaid bounding boxes and labels on the displayed frames to show recognition results in real time. The procedure then repeated for the next frame, enabling continuous, real-time attendance monitoring.
 
