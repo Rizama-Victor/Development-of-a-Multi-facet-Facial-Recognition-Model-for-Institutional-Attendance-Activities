@@ -61,5 +61,26 @@ mitigating recognition challenges caused by varying environmental and facial con
 
 - **Visualization:** OpenCV overlaid bounding boxes and labels on the displayed frames to show recognition results in real time. The procedure then repeated for the next frame, enabling continuous, real-time attendance monitoring.
 
+---
+## 💡 Research Novelty
+
+The novelty and contribution of this research to knowledge was in the successful _**development and training of a multi-facet facial recognition model that accurately identified pre-registered students under different real-time conditions, specifically in varying lighting, head variations, and the use of accessories,  (limited to glasses and beards )**_. In contrast to conventional models, which often exhibited reduced performance under these conditions, this research improved the domain of intelligent educational attendance systems by providing a model that could be used for practical deployments in educational institutions. 
+
+---
+
+## 🔮Future Work
+
+- Future improvements should address the challenge of distinguishing look-alike individuals (e.g., identical twins) through the creation of specialized impostor datasets for more rigorous testing.
+
+- Although the current 128-dimensional embeddings provided strong discriminative power, expanding the dataset to include extreme lighting, wider head tilts, and additional accessories would further enhance robustness.
+
+- Additional advancements could include integrating liveness detection to prevent spoofing, adopting advanced deep learning models such as CNNs or Transformers, and incorporating incremental learning to boost scalability and performance for larger examination cohorts.
+---
+
+## 📌 Note
+Please kindly note that this README file is a summarized version of the full documentation of this research. The complete documentation, dataset and model weights can be provided upon request while the program implementation can be accessed via the [program script](KNN_Model_Development_For_Facial_Recognition.ipynb). 
+
+---
+
 
 
