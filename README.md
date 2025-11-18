@@ -124,6 +124,13 @@ The novelty and contribution of this research to knowledge was in the successful
 
 ---
 
+
+## ⚠️ Disclaimer
+
+The scope of this research focused on training the facial recognition model using a dataset lmited to three pre-registered students. As a result, the model could only verify the attendance of these three individuals and was evaluated according to its ability to recognize them under challenging conditions, including dark and dim lighting, changes in appearance such as the presence or absence of beards and glasses, and variations in head position and orientation.
+
+---
+
 ## 🔮Future Work
 
 - Future improvements should address the challenge of distinguishing look-alike individuals (e.g., identical twins) through the creation of specialized impostor datasets for more rigorous testing.
