@@ -23,6 +23,7 @@ mitigating recognition challenges caused by varying environmental and facial con
 
 | **Tool / Library**                          | **Purpose in the Project**                                                                                                                  |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **CSI Camera Module**                       | Use for capturing and inputting the facial image data of the students. |
 | **OpenCV (cv2)**                            | Handled image capture, video processing, face detection (via Haar Cascade), drawing bounding boxes, and overlaying frames on the interface. |
 | **os**                                      | Managed file paths, checked directory existence, accessed folders for datasets, and handled file creation.                                  |
 | **numpy (np)**                              | Performed numerical operations and supported array manipulation needed in encoding and evaluation tasks.                                    |
