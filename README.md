@@ -139,8 +139,8 @@ Overall, the model achieved a mean response time of `6.00` seconds across all ev
 
 ## 💡 Key Insights
 
-- The use of  128-dimensional facial embeddings generated via a ResNet model was key in enabled effective differentiation between individuals even under challenging environmental and facial conditions.
-- Observations on the evaluation metrics and confusion matrix for the images and videos shows that the model performed slightly better on images than on videos, consistently achieving near-perfect metrics for all students.
+- The use of  128-dimensional facial embeddings generated via a ResNet model was key in enabling effective differentiation between individuals even under challenging environmental and facial conditions.
+- Observations on the evaluation metrics and confusion matrix for the images and videos showed that the model performed slightly better on images than on videos, consistently achieving near-perfect metrics for all students.
 - The confusion matrices demonstrated strong classification capability, while the False Omission Rate (FOR) of 0% highlighted the model’s reliability in correctly identifying enrolled students.
 - Real-time evaluation of the model's performance suggested high lighting tolerance, pose adaptability, and accessory robustness, supporting its suitability for real-time examination attendance monitoring.
 - The overall average response time of 6.00 seconds across bright and dim conditions indicated the influence of lighting but reaffirmed the model’s efficiency for continuous operation.
