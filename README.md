@@ -1,4 +1,5 @@
 # Intelligent Facial Recognition 🪪 for Institutional Exam Attendance
+
 This repository contains the implementation of my research titled _"Intelligent Facial Recognition for Institutional Exam Attendance"_ at the Department of Mechatronics Engineering (DOME), Federal University of Technology, Minna.
 
 ---
@@ -92,6 +93,7 @@ The novelty and contribution of this research to knowledge was in the successful
 - Although the current 128-dimensional embeddings provided strong discriminative power, expanding the dataset to include extreme lighting, wider head tilts, and additional accessories would further enhance robustness.
 
 - Additional advancements could include integrating liveness detection to prevent spoofing, adopting advanced deep learning models such as CNNs or Transformers, and incorporating incremental learning to boost scalability and performance for larger examination cohorts.
+
 ---
 
 ## 📌 Note
