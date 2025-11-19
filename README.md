@@ -175,5 +175,13 @@ Please kindly note that this README file is a summarized version of the full doc
 
 ---
 
+## 👥 Contributors
+
+- **Engr. Dr Kufre Esenowo Jack** : Supervisor
+- **Rizama Victor Samuel**  [GitHub: Rizama-Victor](https://github.com/Rizama-Victor)
+- **Adebayo Kehinde Rahmon**  
+- **Rufai Ahmad Olayemi**  
+
+---
 
 
