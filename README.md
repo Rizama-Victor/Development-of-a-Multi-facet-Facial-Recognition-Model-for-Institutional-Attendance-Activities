@@ -52,7 +52,7 @@ mitigating recognition challenges caused by varying environmental and facial con
     - With the use of different accessories (specifically, with glasses and beards).
   
 
-- **Preprocessing and preparation:** The data pre-processing step involved two stages namely:
+- **Preprocessing and preparation:** The data pre-processing step involved three stages namely:
    - **Image Resizing:** To ensure uniformity across the entire dataset and to meet the requirements of the multi-facet facial recognition model, each cropped face image was rescaled to a fixed size of 400 × 400 pixel using 
 OpenCV’s `resize` function.
    - **Grayscale Conversion:** Following the image resizing step, the next pre-processing technique applied was gray scaling. This technique transformed the resized 400 x 400-pixel color images from the BGR color space captured by OpenCV to grayscale.
@@ -61,7 +61,7 @@ OpenCV’s `resize` function.
       *   Because color was **NOT** a significant factor in determining the identity of a person.
       *   To reduce computational cost during the training in later stages.
   
-   - **Class Balancing:** To ensure good performance of the multi-facet facial recognition model across different scenarios, the data preparation process involved reducing the initial dataset of 34, 064 images to 990 through a careful collection process. It further ensured that there was an equal distribution of 330 images across the three students in bright and dark lighting scenarios as well as different head positions and facial appearance after which the resulting dataset was used for the training process.
+   - **Class Balancing:** To ensure good performance of the multi-facet facial recognition model across different scenarios, the data preparation process involved reducing the initial dataset of 34, 064 images to 990 through a careful collection process. It further ensured that there was an equal distribution of 330 images across the three students in bright and dark lighting scenarios as well as different head positions and facial appearance after which the resulting dataset was used for the training process in the later stages.
 
 - **Face detection:** Because facial data was the primary focus in building the model, a Haar Cascade classifier was used for face detection which involved processing each image frame captured by the camera, and detecting candidate face bounding boxes at multiple scales.
 
@@ -81,13 +81,16 @@ OpenCV’s `resize` function.
 
 ## 🖼️ Results
 
-### 📷 The Student Facial Capturing and Real-time Recognition Results
+### 📷 The Student Facial Capturing Results
+**Note:** The difference in contrast, blur and brightness as seen in the collection of images below was taken ***intentionally*** to enable the model properly generalize to different lighting variations during real-time recognition.
 
 <p align="center">
   <img src="recognition_results/facial_capturing_results.png" alt="facial_capturing_results" width="800" />
     <br>
     <em> A Collection of the Student Facial Capturing Results</em>
 </p>
+
+### 📷 The Real-time Recognition Results
 
 <p align="center">
   <img src="recognition_results/real-time_recognition_results.png" alt="real-time_recognition_results" width="800" />
@@ -129,7 +132,7 @@ OpenCV’s `resize` function.
 
 Real-time performance of the multi-facet facial recognition model was evaluated under three key conditions: lighting variations, head positions, and appearance changes using two primary metrics namely **False Omission Rate (FOR)** and **response time**. For each of the three students, the FOR was measured across three head orientations (straight, `15°` right tilt, and `15°` left tilt), tested both with and without glasses under bright and dim lighting. Across all scenarios, each student completed six genuine recognition attempts, and the model recorded **no missed identifications**, resulting in a **0% False Omission Rate (FOR)**.
 
-For the response time The model demonstrated strong adaptability across all lighting and appearance conditions. Under bright lighting, it achieved an average response time of `4.02` seconds, reflecting efficient recognition in optimal conditions. In dim lighting, the average increased to `7.98` seconds due to reduced facial clarity, yet still confirmed the model’s capability to function reliably in low-light examination environments.
+For the response time, the model demonstrated strong adaptability across all lighting and appearance conditions. Under bright lighting, it achieved an average response time of `4.02` seconds, reflecting efficient recognition in optimal conditions. In dim lighting, the average increased to `7.98` seconds due to reduced facial clarity, yet still confirmed the model’s capability to function reliably in low-light examination environments.
 
 Appearance variations also affected performance: students wearing glasses or beards recorded an average response time of `6.21` seconds, compared to `5.79` seconds without accessories indicating only a modest increase in computation time. Head position tests revealed similar trends, with straight faces averaging `4.33` seconds, while `15°` leftward and rightward tilts produced `7.27` seconds and `6.40` seconds respectively, due to slight distortions in facial alignment.
 
@@ -147,7 +150,7 @@ Overall, the model achieved a mean response time of `6.00` seconds across all ev
 
 ## ✨ Research Novelty
 
-The novelty and contribution of this research to knowledge was in the successful _**development and training of a multi-facet facial recognition model that accurately identified pre-registered students under different real-time conditions, specifically in varying lighting, head variations, and the use of accessories,  (limited to glasses and beards )**_. In contrast to conventional models, which often exhibited reduced performance under these conditions, this research improved the domain of intelligent educational attendance systems by providing a model that could be used for practical deployments in educational institutions. 
+The novelty and contribution of this research to knowledge was in the successful _**development and training of a multi-facet facial recognition model that recognized pre-registered students under different real-time conditions, specifically in varying lighting, head variations, and the use of accessories,  (limited to glasses and beards )**_. In contrast to conventional models, which often exhibited reduced performance under these conditions, this research improved the domain of intelligent educational attendance systems by providing a model that could be used for practical deployments in educational institutions. 
 
 ---
 
