@@ -1,6 +1,7 @@
-# Intelligent Facial Recognition 🪪 for Institutional Exam Attendance
+# Development of a multi-facet facial recognition model for institutional attendance activities during examination scenario
 
-This repository contains the implementation of my research titled _"Intelligent Facial Recognition for Institutional Exam Attendance"_ at the Department of Mechatronics Engineering (DOME), Federal University of Technology, Minna.
+This repository contains the implementation of my research titled _"Development of a multi-facet facial recognition model for institutional attendance activities 
+during examination scenario"_ at the Department of Mechatronics Engineering (DOME), Federal University of Technology, Minna.
 
 ---
 
