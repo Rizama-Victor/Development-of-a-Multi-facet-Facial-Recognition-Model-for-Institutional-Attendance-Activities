@@ -1,4 +1,4 @@
-# Development of a Multi-facet Facial Recognition Model for Institutional Attendance Activities During Examination Scenario
+# Development of a Multi-facet Facial Recognition Model for Institutional Attendance Activities During Examination Scenario.
 
 This repository contains the implementation of my research titled [_"Development of a multi-facet facial recognition model for institutional attendance activities 
 during examination scenario"_](https://link.springer.com/article/10.1007/s44163-026-01474-y), published in the [_Discover Artificial Intelligence Journal_](https://link.springer.com/journal/44163) and authored by Jack, K.E., Rizama, V.S., Adebayo, K.R., Ambafi, J.G., Olayemi, R.A., Olaoye, J.O., Tunbosun, D.O., & Olawuyi, A.V. (2026).
